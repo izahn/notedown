@@ -197,7 +197,7 @@ class MarkdownReader(NotebookReader):
             pass
 
         elif self.match == 'fenced' and block.get('indent'):
-            print 'jazz'
+            print('jazz')
             return self.new_text_block(content=('\n' +
                                                 block['icontent']
                                                 + '\n'))
