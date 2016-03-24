@@ -31,6 +31,8 @@ install:
   - pip install pep8
   - pip install .
 
+before_script:
+    - export LANG=EN_US.UTF-8
 script:
     - if $PEP; then pep8 notedown; fi
     - if ! $PEP; then nosetests; fi
